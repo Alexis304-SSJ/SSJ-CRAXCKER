@@ -1,0 +1,83 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Para evitar barras de desplazamiento */
+}
+
+.content {
+    position: relative;
+    z-index: 2; /* El contenido está sobre los videos */
+    color: black; /* Color del texto */
+    text-align: center;
+    padding-top: 20%;
+}
+
+h1 {
+    font-size: 3em; /* Tamaño del texto */
+    margin: 0;
+    padding: 0.5em;
+    position: relative;
+    z-index: 3; /* Asegura que esté sobre el video */
+}
+
+/* Estilo para el enlace */
+.return-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff; /* Color del enlace */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Eliminar subrayado */
+    z-index: 3; /* Asegura que esté sobre el video */
+    position: relative; /* Para que esté en el flujo de la página */
+}
+
+/* Efecto hover en el enlace */
+.return-link:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo más oscuro al pasar el cursor */
+}
+
+/* Video de fondo 1 */
+#background-video1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 50%; /* Cubre el 50% del ancho */
+    min-height: 100%; /* Cubre todo el alto */
+    z-index: 1;
+    object-fit: cover;
+     /* Ajustar la opacidad para que ambos videos se mezclen mejor */
+}
+
+/* Video de fondo 2 (duplicado) */
+#background-video2 {
+    position: fixed;
+    top: 0;
+    left: 50%; /* Empieza donde termina el primer video */
+    min-width: 50%; /* Cubre el 50% restante */
+    min-height: 100%;
+    z-index: 1;
+    object-fit: cover;
+     /* Ajusta la opacidad también aquí */
+}
+
+/* Ajustar el contenido sobre el video */
+h1, p {
+    margin: 0;
+    padding: 0.5em;
+}
+a {
+    color: #9e0ee1; 
+    text-decoration: none; 
+}
+
+
+a:hover {
+    color: #0ee1de;
+}
+

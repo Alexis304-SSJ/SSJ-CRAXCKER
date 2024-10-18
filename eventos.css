@@ -1,0 +1,56 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+
+    /* Imagen de fondo */
+    background-image: url('luna.jpg'); /* Cambia 'tu-imagen.jpg' por el nombre de tu archivo */
+    background-repeat: repeat; /* La imagen se repetirá */
+    background-size: auto; /* Para que no se deforme */
+    background-position: center center; /* Centra la imagen */
+}
+
+/* Estilo del contenido para que esté sobre el fondo */
+.content {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté por encima de la imagen de fondo */
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+}
+
+/* Ajustar h1 y p para que se vean bien */
+h1, p {
+    margin: 0;
+    padding: 0.5em;
+}
+section{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+a {
+    color: #9e0ee1; 
+    text-decoration: none; 
+}
+
+
+a:hover {
+    color: #0ee1de;
+}
